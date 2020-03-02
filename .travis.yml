@@ -9,5 +9,5 @@ after_success:
 addons:
   ssh_known_hosts: moon.scs.ryerson.ca
 before_install:
-- openssl aes-256-cbc -K $encrypted_8a1038356229_key -iv $encrypted_8a1038356229_iv
+- openssl aes-256-cbc -K $encrypted_8a1038356229_key -IV $encrypted_8a1038356229_iv
   -in deploy_rsa.enc -out deploy_rsa -d
