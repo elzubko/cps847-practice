@@ -7,9 +7,15 @@ script:
 after_success:
 - codecov
 
-addons:
-  ssh_known_hosts: moon.scs.ryerson.ca
-  
+deploy:
+  provider: s3
+  access_key_id: AKIAJ2VQQ5L6OE7UZLDQ
+  secret_access_key: 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
+  bucket: cps847-practice
+  local_dir: git_tst
+
+#addons:
+#  ssh_known_hosts: moon.scs.ryerson.ca
 #before_deploy:
 #- openssl aes-256-cbc -K $encrypted_<...>_key -iv $encrypted_<...>_iv 
 #  - in deploy_rsa.enc -out /tmp/deploy_rsa -d
