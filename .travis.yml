@@ -7,12 +7,12 @@ script:
 after_success:
 - codecov
 
-deploy:
-  provider: s3
-  access_key_id: AKIAJ2VQQ5L6OE7UZLDQ
-  secret_access_key: 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
-  bucket: cps847-practice
-  local_dir: git_tst
+#deploy:
+#  provider: s3
+#  access_key_id:
+#  secret_access_key: 
+#  bucket: 
+#  local_dir: git_tst
 
 #addons:
 #  ssh_known_hosts: moon.scs.ryerson.ca
